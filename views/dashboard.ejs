@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/stylesheets/material.min.css">
+    <style>
+
+    html, body {
+      font-family: 'Roboto', 'Helvetica', sans-serif;
+    }
+    .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
+      color: rgba(0, 0, 0, 0.54);
+    }
+    .demo-drawer {
+      border: none;
+    }
+    /* iOS Safari specific workaround */
+    .demo-drawer .mdl-menu__container {
+      z-index: -1;
+    }
+    .demo-drawer .demo-navigation {
+      z-index: -2;
+    }
+    /* END iOS Safari specific workaround */
+    .demo-drawer .mdl-menu .mdl-menu__item {
+      display: flex;
+      align-items: center;
+    }
+    .demo-drawer-header {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 16px;
+      height: 151px;
+    }
+    .demo-avatar-dropdown {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+    }
+
+    .demo-navigation {
+      flex-grow: 1;
+    }
+    .demo-layout .demo-navigation .mdl-navigation__link {
+      display: flex !important;
+      flex-direction: row;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.56);
+      font-weight: 500;
+    }
+    .demo-layout .demo-navigation .mdl-navigation__link:hover {
+      background-color: #00BCD4;
+      color: #37474F;
+    }
+    .demo-navigation .mdl-navigation__link .material-icons {
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.56);
+      margin-right: 32px;
+    }
+    .demo-content {
+      max-width: 1080px;
+    }
+    .fullwidth{
+      width: 100%
+    }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Videos</span>
+          <div class="mdl-layout-spacer"></div>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Create New
+          </button>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">  
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">video_library</i>Videos</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_circle</i>Profile</a>
+          <div class="mdl-layout-spacer"></div>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+          <table class="mdl-data-table mdl-js-data-table fullwidth">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Publish Date</th>
+                <th class="mdl-data-table__cell--non-numeric">Video Title</th>
+                <th class="mdl-data-table__cell--non-numeric">Template Type</th>
+                <th class="mdl-data-table__cell--non-numeric">Status</th>
+                <th class="mdl-data-table__cell--non-numeric">Link</th>
+                <th class="mdl-data-table__cell--non-numeric">Key</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">19/12/2016</td>
+                <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                <td class="mdl-data-table__cell--non-numeric">Single Picture/Multiple/Question</td>
+                <td class="mdl-data-table__cell--non-numeric">Live/Ended</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+              </tr>
+
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">19/12/2016</td>
+                <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                <td class="mdl-data-table__cell--non-numeric">Picture/Question</td>
+                <td class="mdl-data-table__cell--non-numeric">Live/Ended</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">19/12/2016</td>
+                <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                <td class="mdl-data-table__cell--non-numeric">Picture/Question</td>
+                <td class="mdl-data-table__cell--non-numeric">Live/Ended</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">19/12/2016</td>
+                <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                <td class="mdl-data-table__cell--non-numeric">Picture/Question</td>
+                <td class="mdl-data-table__cell--non-numeric">Live/Ended</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">19/12/2016</td>
+                <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                <td class="mdl-data-table__cell--non-numeric">Picture/Question</td>
+                <td class="mdl-data-table__cell--non-numeric">Live/Ended</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">19/12/2016</td>
+                <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                <td class="mdl-data-table__cell--non-numeric">Picture/Question</td>
+                <td class="mdl-data-table__cell--non-numeric">Live/Ended</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">19/12/2016</td>
+                <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                <td class="mdl-data-table__cell--non-numeric">Picture/Question</td>
+                <td class="mdl-data-table__cell--non-numeric">Live/Ended</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+                <td class="mdl-data-table__cell--non-numeric">Copy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="/javascripts/material.min.js"></script>
+  </body>
+</html>

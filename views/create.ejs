@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Material Design Lite</title>
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/stylesheets/material.min.css">
+  <link rel="stylesheet" href="/stylesheets/stepper.min.css">
+  <link rel="stylesheet" href="/stylesheets/emoji.css">
+  <style>
+    html,
+    body {
+      font-family: 'Roboto', 'Helvetica', sans-serif;
+    }
+    
+    .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
+      color: rgba(0, 0, 0, 0.54);
+    }
+    
+    .demo-content {
+      max-width: 1080px;
+    }
+    
+    .fullwidth {
+      width: 100%;
+      max-width: 100%
+    }
+    .mdl-step__content{
+      padding: 24px;
+    }
+
+    .mdl-step__actions{
+      padding-top: 0px;
+    }
+
+    #like {
+      content: '\01F44D';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+      <div class="mdl-layout__header-row">
+        <button class="mdl-button mdl-js-button mdl-button--colored">
+            <i class="material-icons">arrow_back</i>
+          </button>
+        <span class="mdl-layout-title">Create Video</span>
+        <div class="mdl-layout-spacer"></div>
+    </header>
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <div class="mdl-grid demo-content">
+        <div class="mdl-cell mdl-cell--12-col">
+          <!-- markup -->
+          <ul class="mdl-stepper mdl-stepper--linear fullwidth" id="demo-stepper-linear">
+            <li class="mdl-step mdl-step--editable">
+              <span class="mdl-step__label">
+              <span class="mdl-step__title">
+                <span class="mdl-step__title-text">Connect Facebook</span>
+              </span>
+              </span>
+              <div class="mdl-step__content">
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised" data-stepper-next> Facebook Login </button>
+              </div>
+              <div class="mdl-step__actions">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised" data-stepper-next> Continue </button>
+              </div>
+            </li>
+            <li class="mdl-step mdl-step--editable">
+              <span class="mdl-step__label">
+                <span class="mdl-step__title">
+                 <span class="mdl-step__title-text">Select Page & Template</span>
+                </span>
+              </span>
+              <div class="mdl-step__content">
+
+                <h5>1. Choose Page</h5>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="android">
+                  <input type="radio" id="android" class="mdl-radio__button" name="options" checked />
+                                              <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">Android</span>
+                </label>
+                  
+                  <br>
+                  <br>
+                
+                <!-- Radio Button 2 -->
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="windows">
+                  <input type="radio" id="windows" class="mdl-radio__button" name="options" />
+                  <span class="mdl-radio__label">Windows</span>
+                </label>
+
+                  <br>
+                  <br>
+
+                
+                <h5>2. Choose Template</h5>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="single-image">
+                  <input type="radio" id="single-image" class="mdl-radio__button" name="options" checked />
+                                              <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">Single Image</span>
+                </label>
+                  
+                  <br>
+                  <br>
+                
+                <!-- Radio Button 2 -->
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="multiple-images">
+                  <input type="radio" id="multiple-images" class="mdl-radio__button" name="options" />
+                  <span class="mdl-radio__label">Multiple Images</span>
+                </label>
+
+                  <br>
+                  <br>
+
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="question">
+                  <input type="radio" id="question" class="mdl-radio__button" name="options" />
+                  <span class="mdl-radio__label">Question</span>
+                </label>
+
+                  <br>
+                  <br>
+              </div>
+              <div class="mdl-step__actions">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised" data-stepper-next> Continue </button>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect" data-stepper-back> Back </button>
+              </div>
+            </li>
+            <li class="mdl-step mdl-step--editable">
+              <span class="mdl-step__label">
+          <span class="mdl-step__title">
+            <span class="mdl-step__title-text">Fill Live Poll Information</span>
+              </span>
+              </span>
+              <div class="mdl-step__content">
+                <form action="#">
+                  <h5>Enter title or Question you want on the Video</h5>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="title">
+                    <label class="mdl-textfield__label" for="sample3">Title/Question</label>
+                  </div>
+                  <br>
+                  <h5>Enter Image Url/Option Name (Each of them Maps to an emotion)</h5>
+                  <p>If you dont have the image url, you can upload the image to imgur or any other free service and paste the link</p>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="question">
+                    <label class="mdl-textfield__label" for="sample3">👍 Like</label>
+                  </div>
+                  <br>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="question">
+                    <label class="mdl-textfield__label" for="sample3">❤ Love</label>
+                  </div>
+                  <br>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="question">
+                    <label class="mdl-textfield__label" for="sample3">😆 Haha</label>
+                  </div>
+                  <br>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="question">
+                    <label class="mdl-textfield__label" for="sample3">😲 Wow</label>
+                  </div>
+                  <br>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="question">
+                    <label class="mdl-textfield__label" for="sample3">😥 Sad</label>
+                  </div>
+                  <br>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="question">
+                    <label class="mdl-textfield__label" for="sample3">😡 Angry</label>
+                  </div>
+                </form>
+              </div>
+              <div class="mdl-step__actions">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised" data-stepper-next> Continue </button>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect" data-stepper-back> Back </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    </div>
+    <script src="/javascripts/material.min.js"></script>
+    <script src="/javascripts/stepper.min.js"></script>
+    <script>
+      (function () {
+        // Stepper linear demonstration 
+        var demoLinear = function (e) {
+          // Select stepper container element      
+          var element = document.querySelector('.mdl-stepper#demo-stepper-linear');
+
+          if (!element) return;
+
+          // Get the MaterialStepper instance of element to control it          
+          var stepper = element.MaterialStepper;
+          var steps = element.querySelectorAll('.mdl-step');
+          var step;
+          // Just looping and adding listener to event onstepnext to the all steps          
+          for (var i = 0; i < steps.length; i++) {
+            step = steps[i];
+            // When user clicks on [data-stepper-next] button of step          
+            step.addEventListener('onstepnext', function (e) {
+              // {element}.MaterialStepper.next() change the state of current step to "completed" 
+              // and move one step forward        
+              stepper.next();
+            });
+
+            step.addEventListener('onstepback', function (e) {
+              stepper.back();
+            });
+          }
+          // When all steps are completed this event is dispatched          
+          element.addEventListener('onsteppercomplete', function (e) {
+            var toast = document.querySelector('#snackbar-stepper-complete');
+            if (!toast) return;
+            toast.MaterialSnackbar.showSnackbar({
+              message: 'Stepper linear are completed',
+              timeout: 4000,
+              actionText: 'Ok'
+            });
+          });
+        };
+
+        window.addEventListener('load', demoLinear);
+      })();
+    </script>
+</body>
+
+</html>
